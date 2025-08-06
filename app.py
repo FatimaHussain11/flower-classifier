@@ -33,6 +33,8 @@ if uploaded_file is not None:
     # Output
     predicted_class = class_names[np.argmax(prediction)]
     confidence = np.max(prediction)
+# trigger rebuild
 
     st.markdown(f"### 🌼 Prediction: **{predicted_class}**")
     st.markdown(f"**Confidence:** {confidence:.2f}")
+
